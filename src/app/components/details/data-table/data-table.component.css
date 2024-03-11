@@ -1,0 +1,7 @@
+.full-width-table {
+  width: 100%;
+  background-color: azure;
+}
+th,td {
+  background-color: azure;
+}

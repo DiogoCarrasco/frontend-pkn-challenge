@@ -1,0 +1,14 @@
+.main-section{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+}
+.content {
+    
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    font-family: "Roboto Mono", sans-serif;
+
+}

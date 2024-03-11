@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    background-color:#111827;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+}
+
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@140&display=swap";
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
