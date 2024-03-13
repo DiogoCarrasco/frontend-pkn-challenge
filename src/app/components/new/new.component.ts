@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HeaderComponent } from '../shared/header/header.component';
+import { CardsService } from '../../services/cards.service';
 
 @Component({
   selector: 'app-new',
@@ -8,6 +9,17 @@ import { HeaderComponent } from '../shared/header/header.component';
   templateUrl: './new.component.html',
   styleUrl: './new.component.css'
 })
-export class NewComponent {
+export class NewComponent implements OnInit {
+
+ constructor(private cardsService: CardsService) {
+
+ }
+
+ngOnInit() {
+
+  console.log(this.cardsService);
+  
+}
+
 
 }

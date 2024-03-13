@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { HeaderComponent } from './components/shared/header/header.component';
 import { NewComponent } from './components/new/new.component';
 import {MatTableModule} from '@angular/material/table';
+import { CardsService } from './services/cards.service';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +13,13 @@ import {MatTableModule} from '@angular/material/table';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
-  title = 'frontend-challenge';
+export class AppComponent implements OnInit{
+  constructor (private cardService: CardsService) { 
+
+  }
+
+  ngOnInit() {
+    console.log('teste', this.cardService);
+  }
+  
 }
